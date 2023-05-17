@@ -14,6 +14,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from "./Components/Home.jsx";
 
 function App() {
   const firebaseConfig = {
@@ -34,9 +35,7 @@ function App() {
 
   return (
     <>
-      <div>
-        <Navbar />
-      </div>
+      <Home />
     </>
   );
 }

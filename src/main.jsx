@@ -20,7 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: 
-    <div className=' h-screen bg-red-300'>
+    <div className=' h-screen w-screen bg-red-400'>
     <Navbar />
     </div>,
     children: [

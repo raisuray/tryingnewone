@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import {AiFillContacts, AiFillFacebook, AiFillFlag, AiFillInstagram, AiFillTwitterCircle} from "react-icons/ai";
 
 function Navbar() {
   return (
@@ -29,6 +30,20 @@ function Navbar() {
       </div>
 
       <Outlet />
+
+      <div className='footer bg-gray-700 w-fit'>
+        {/*Kontak*/}
+
+          <ul>
+            <li><AiFillInstagram className='mr-4 text-2xl'/> Instagram</li>
+            <li><AiFillFacebook className='mr-4 text-2xl'/> Facebook</li>
+            <li><AiFillTwitterCircle className='mr-4 text-2xl'/>Twitter</li>
+            <li><AiFillContacts className='text-2xl mr-4'/>Contact Us : 021-9090878</li>
+            <li><AiFillFlag className='mr-4 text-2xl'/>Jl. merdeka 45 blok 2</li>
+          </ul>
+        </div>
+
+
     </>
   );
 }

@@ -1,21 +1,60 @@
+// Home screen component
+
 import React from "react";
+import Pict from "../assets/grid_0.png";
+import '../style/Home.css'
+import {Link} from "react-router-dom";
+
+import { AiFillInstagram, AiFillFacebook, AiFillTwitterCircle, AiFillContacts ,AiFillFlag} from 'react-icons/ai';
+
+
 
 function Home() {
   return (
-    <div className="p-5">
-      <div className=" absolute top-1/3  left-20">
-        <h1 className=" font-bold text-6xl ">Snacklicious</h1>
-        <p className=" text-2xl">
-          Menjual beragam macam{" "}
-          <span className=" text-amber-700 font-bold">snack </span>Indonesia
-        </p>
-        <button className=" bg-amber-500 p-3 rounded-lg border-x-2 border-y-2  border-black mt-3 hover:bg-amber-400">
-          Check product !
-        </button>
+      <>
+        <div className='flex flex-1 flex-col m-5'>
+            {/*HERO*/}
+            <div className=''>
+                <p className='border-gray-100'>HELLO</p>
 
-        
-      </div>
-    </div>
+            </div>
+        </div>
+
+            {/*PRODUCT*/}
+        <div className='bg-red-300 pb-10 '>
+            <h1 className='text-center text-4xl m-10 p-10 bg-red-100 rounded-lg'>Our Favorite Product</h1>
+            <div className='flex flex-row justify-around mr-10 ml-10'>
+
+              {/*Component Product in Card Style*/}
+              <div className='flex flex-col justify-center align-middle'>
+                <img src={Pict} alt="Your Image" width={400} className='rounded-lg'/>
+                  <Link to={`/product/`} className='bg-red-400 mt-2 mb-2 rounded-lg p-3'>
+                    <p className='text-white text-xl font-bold text-center'>Add to Cart</p>
+                  </Link>
+              </div>
+              <div className='flex flex-col justify-center align-middle'>
+                <img src={Pict} alt="Your Image" width={400} className='rounded-lg'/>
+                <Link to={`/product/`} className='bg-red-400 mt-2 mb-2 rounded-lg p-3'>
+                  <p className='text-white text-xl font-bold text-center'>Add to Cart</p>
+                </Link>
+              </div>
+              <div className='flex flex-col justify-center align-middle'>
+                <img src={Pict} alt="Your Image" width={400} className='rounded-lg'/>
+                <Link to={`/product/`} className='bg-red-400 mt-2 mb-2 rounded-lg p-3'>
+                  <p className='text-white text-xl font-bold text-center'>Add to Cart</p>
+                </Link>
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+      </>
+
   );
 }
 
