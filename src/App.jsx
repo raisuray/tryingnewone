@@ -10,11 +10,7 @@ import { getAnalytics } from "firebase/analytics";
 import SignIn from "./Auth/SignIn";
 import Navbar from "./Components/Navbar";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from "./Components/Home.jsx";
+import Home from "./Components/Home";
 
 function App() {
   const firebaseConfig = {
